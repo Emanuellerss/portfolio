@@ -6,11 +6,6 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <script src="js/main.js"></script>
-
-    <!--Animation css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
     <!--fontAwesome-->
     <script src="https://kit.fontawesome.com/f1b6df7d8e.js" crossorigin="anonymous"></script>
 
@@ -23,7 +18,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
 
     <title>Home - Emanuelle Rodrigues</title>
 </head>
@@ -32,11 +27,11 @@
     <nav>
         <div class="org-nav">
             <ul>
-                <li><a href="#" class="logo"><img id="nav-img" src="" alt="logo.png"></a></li>
+                <li><a href="#" class="logo"><img id="nav-img" src="img/logo.jpeg" alt="logo.png"></a></li>
             </ul>
             <ul class="header">
-                <li class="li"><a href="#view-sec">Sobre mim</a></li>
-                <li class="li"><a href="#projects">Projetos</a></li>
+                <li class="li"><a class="color-button" href="#apresentation-view">Sobre mim</a></li>
+                <li class="li"><a href="#project-view">Projetos</a></li>
                 <li class="li"><a href="#contact-view">Contato</a></li>
             </ul>
             <!--Hamburguer-->
@@ -46,8 +41,8 @@
                     <div class="hamburguer active"></div>
                 </label>
                 <ul class="menu active">
-                    <li><a href="#view-sec">Sobre mim</a></li>
-                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#apresentation-view">Sobre mim</a></li>
+                    <li><a href="#project-view">Projetos</a></li>
                     <li><a href="#contact-view">Contato</a></li>
                 </ul>
             </div>
@@ -63,7 +58,7 @@
     </nav>
 
     <!-- APRESENTATION-VIEW -->
-    <section id="view-sec" class="container">
+    <section id="apresentation-view" class="container">
         <div class="org-align">
             <div class="align-center">
                 <!-- SPAN DA ESQUERDA -->
@@ -73,11 +68,13 @@
                 <!-- SPAN DA DIREITA -->
                 <span>
                     <div class="infos-align">
-                        Sou a Manu, tenho 19 anos. Estudo Designer de Produto
-                        e o mundo de UX também.<br>
-                        Amo participar de cada projeto e aprender ainda mais!<br>
-                        A natureza é minha segunda casa e o meu lema é "saia
-                        da zona de conforto".
+                        <p>
+                            Sou a Manu, tenho 19 anos. Estudo Designer de Produto
+                            e o mundo de UX também.<br>
+                            Amo participar de cada projeto e aprender ainda mais!<br>
+                            A natureza é minha segunda casa e o meu lema é "saia
+                            da zona de conforto".
+                        </p>
                     </div>
                 </span>
             </div>
@@ -85,11 +82,51 @@
     </section>
     <!-- END -> APRESENTATION-VIEW -->
 
+
+    <!-- PROJECT-VIEW -->
+    <section id="project-view" class="container">
+        <div class="org-align">
+            <div class="align-center">
+                <div class="limiter">
+                    <!-- SPAN DE CIMA -->
+                    <span style="margin-bottom: 7px;">
+                        <div style="box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.178);">
+                            <img src="img/about-img.jpg" alt="project-1.png">
+                        </div>
+                        <div class="infos-align">
+                            <p>Universo das Artes - Ux/Ui Design</p>
+                            <p><strong>Plataforma para Artes Visuais</strong></p>
+                            <p><a href="#">Ver Projeto <ion-icon name="chevron-forward-outline"></ion-icon></a></p>
+                        </div>
+                    </span>
+                    <!-- SPAN DE BAIXO -->
+                    <span>
+                        <div style="box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.178);">
+                            <img src="img/about-img.jpg" alt="project-2.png">
+                        </div>
+                        <div class="infos-align">
+                            <p>Cadeira Bauhauniana - Ux/Ui Design</p>
+                            <p><strong>Mobiliário Artístico</strong></p>
+                            <p><a href="#">Ver Projeto <ion-icon name="chevron-forward-outline"></ion-icon></a></p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROJECT-VIEW -->
+
+
     <!-- CONTACT-VIEW -->
     <section id="contact-view" class="container">
         <div class="org-align">
             <div class="align-center">
-
+                <h1>Entre em contato para conversarmos</h1>
+                <div class="infos-align">
+                    <p><a href="https://api.whatsapp.com/send?phone=5531973652150"><i class="fa-brands fa-whatsapp"></i></a> (31) 97365-2150</p>
+                    <p><a href="mailto:manusousarss@gmail.com"><i class="fa-solid fa-envelope"></i></a> manusousarss@gmail.com</p>
+                    <p><a href="https://www.linkedin.com/in/emanuelle-rodrigues-de-sousa-silva-518032253/"><i class="fa-brands fa-linkedin-in"></i></a> Emanuelle Rodrigues</p>
+                </div>
             </div>
         </div>
     </section>
