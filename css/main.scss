@@ -293,6 +293,7 @@ nav .header .li a {
 
 #project-view.container {
     height: 100%;
+    padding: 40px 0px;
 }
 
 #project-view .org-align {
@@ -309,11 +310,11 @@ nav .header .li a {
                 flex-direction: row;
                 justify-content: space-between;
                 width: 100%;
-                margin-bottom: 20px;
+                margin-bottom: 60px;
 
                 & div {
                     position: relative;
-                    width: 46%;
+                    width: 48%;
 
                     & img {
                         width: 100%;
@@ -341,7 +342,7 @@ nav .header .li a {
 
         &.null {
             &:hover {
-                color: #f71717;
+                color: #da6060;
             }
         }
 
