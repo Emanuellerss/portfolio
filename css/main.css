@@ -199,7 +199,7 @@ nav .header .li a {
 /* END Padrão de Design */
 /* APRESENTATION-VIEW */
 #apresentation-view.container {
-  height: 85vh; }
+  height: 84vh; }
 
 #apresentation-view .align-center {
   column-gap: 40px;
@@ -243,7 +243,7 @@ nav .header .li a {
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
-      margin-bottom: 7px; }
+      margin-bottom: 20px; }
       #project-view .org-align .align-center span div {
         position: relative;
         width: 46%; }
