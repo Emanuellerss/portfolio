@@ -359,6 +359,11 @@ nav .header .li a {
         & .infos-align {
             margin: 40px 0px;
             width: auto;
+
+            & p a {
+                text-decoration: none;
+                color: var(--font-light);
+            }
         }
 
         & p i {
