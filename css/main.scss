@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    transition: 0.4s;
 }
 
 *::selection {
@@ -43,7 +42,7 @@
 /* STICKY NAVBAR */
 
 nav {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -250,16 +249,24 @@ nav .header .li a {
 
 /* APRESENTATION-VIEW */
 
+#apresentation-view.container {
+    height: 85vh;
+}
+
 #apresentation-view .align-center {
     column-gap: 40px;
     row-gap: 40px;
+
+    & span {
+        width: 50%;
+    }
 }
 
 .img-ap {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 50%;
     box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.178);
 
     & img {
@@ -330,10 +337,21 @@ nav .header .li a {
         line-height: 30px;
         color: var(--font-light);
         text-decoration: none;
+        transition: 0.4s;
+
+        &.null {
+            &:hover {
+                color: #f71717;
+            }
+        }
 
         & ion-icon {
             font-size: 1.4rem;
             margin-left: 10px;
+        }
+
+        &:hover {
+            color: var(--color-principal);
         }
     }
 }
@@ -471,6 +489,19 @@ nav .header .li a {
     }
 
     /* APRESENTATION-VIEW*/
+
+    #apresentation-view.container {
+        height: 100vh;
+    }
+
+    #apresentation-view .align-center {
+        column-gap: 40px;
+        row-gap: 40px;
+    
+        & span {
+            width: 100%;
+        }
+    }
     
     .img-ap {
         width: 100%;

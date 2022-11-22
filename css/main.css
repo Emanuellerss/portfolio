@@ -5,8 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
-  transition: 0.4s; }
+  scroll-behavior: smooth; }
 
 *::selection {
   background-color: #62b99f;
@@ -33,7 +32,7 @@
 /*END BARRA DE NAVEGAÇÃO*/
 /* STICKY NAVBAR */
 nav {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -199,15 +198,20 @@ nav .header .li a {
 
 /* END Padrão de Design */
 /* APRESENTATION-VIEW */
+#apresentation-view.container {
+  height: 85vh; }
+
 #apresentation-view .align-center {
   column-gap: 40px;
   row-gap: 40px; }
+  #apresentation-view .align-center span {
+    width: 50%; }
 
 .img-ap {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65%;
+  width: 50%;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.178); }
   .img-ap img {
     position: relative;
@@ -258,10 +262,15 @@ nav .header .li a {
     font-weight: 300;
     line-height: 30px;
     color: var(--font-light);
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 0.4s; }
+    #project-view .align-center span .infos-align p a.null:hover {
+      color: #f71717; }
     #project-view .align-center span .infos-align p a ion-icon {
       font-size: 1.4rem;
       margin-left: 10px; }
+    #project-view .align-center span .infos-align p a:hover {
+      color: var(--color-principal); }
 
 /* END PROJECT-VIEW */
 #contact-view .org-align {
@@ -279,6 +288,9 @@ nav .header .li a {
     #contact-view .org-align .align-center .infos-align {
       margin: 40px 0px;
       width: auto; }
+      #contact-view .org-align .align-center .infos-align p a {
+        text-decoration: none;
+        color: var(--font-light); }
     #contact-view .org-align .align-center p i {
       margin: 20px 10px;
       padding: 10px 11px;
@@ -350,6 +362,13 @@ nav .header .li a {
     align-items: center;
     justify-content: center; }
   /* APRESENTATION-VIEW*/
+  #apresentation-view.container {
+    height: 100vh; }
+  #apresentation-view .align-center {
+    column-gap: 40px;
+    row-gap: 40px; }
+    #apresentation-view .align-center span {
+      width: 100%; }
   .img-ap {
     width: 100%; }
     .img-ap img {
