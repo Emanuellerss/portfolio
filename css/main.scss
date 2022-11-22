@@ -43,7 +43,7 @@
 /* STICKY NAVBAR */
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -52,7 +52,7 @@ nav {
     align-items: center;
     letter-spacing: 1px;
     padding: 2.8vh 0px;
-    background-color: var(--back-first);
+    background-color: var(--font-light);
     z-index: 10000;
 }
 
@@ -98,7 +98,7 @@ nav .header li a {
 }
 
 nav .header .li a {
-    color: var(--font-light);
+    color: var(--back-first);
 
     &:hover {
         color: var(--color-principal);
@@ -114,7 +114,7 @@ nav .header .li a {
 .hamburguer {
     display: none;
     cursor: pointer;
-    top: 27px;
+    top: 10px;
     right: 10%;
     width: 40px;
     height: 40px;
@@ -126,7 +126,7 @@ nav .header .li a {
     position: relative;
     width: 100%;
     height: 4px;
-    background-color: var(--font-light);
+    background-color: var(--back-first);
     z-index: 1000;
     transition: 0.6s ease;
 }
@@ -136,7 +136,7 @@ nav .header .li a {
     position: relative;
     width: 100%;
     height: 4px;
-    background-color: var(--font-light);
+    background-color: var(--back-first); 
     z-index: 1000;
     transition: 0.6s ease;
 }
@@ -248,7 +248,6 @@ nav .header .li a {
 /* END Padrão de Design */
 
 
-
 /* APRESENTATION-VIEW */
 
 #apresentation-view .align-center {
@@ -260,8 +259,7 @@ nav .header .li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 45%;
-    max-width: 45%;
+    width: 65%;
     box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.178);
 
     & img {
@@ -286,40 +284,38 @@ nav .header .li a {
 
 /* PROJECT-VIEW */
 
+#project-view.container {
+    height: 100%;
+}
+
 #project-view .org-align {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     & .align-center {
         flex-direction: column;
-        height: 75%;
-
-        & .limiter {
-            position: relative;
-            height: 100%;
-            width: 100%;
 
             & span {
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
                 width: 100%;
-                height: 50%;
+                margin-bottom: 7px;
 
                 & div {
                     position: relative;
-                    height: 100%;
-                    width: 50%;
-                    overflow: hidden;
+                    width: 46%;
 
                     & img {
                         width: 100%;
+                        box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.178);
                     }
                 }
             }
         }
     }
-}
 
 #project-view .align-center span .infos-align {
     display: flex;
@@ -445,6 +441,7 @@ nav .header .li a {
 
     nav {
         position: fixed;
+        padding: .5vh 0px;
     }
 
     .header {
@@ -468,14 +465,26 @@ nav .header .li a {
         justify-content: center;
     }
 
+    /* APRESENTATION-VIEW*/
+    
+    .img-ap {
+        width: 100%;
+
+    
+        & img {
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    /* END APRESENTATION-VIEW */
+
     /* PROJECT-VIEW */
 
     #project-view .org-align {
         & .align-center {
             height: 100%;
             width: 100%;
-
-            & .limiter {
 
                 & span {
                     display: flex;
@@ -490,7 +499,6 @@ nav .header .li a {
                 }
             }
         }
-    }
 
     /* END PROJECT-VIEW*/
 }
