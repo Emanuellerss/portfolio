@@ -284,6 +284,7 @@ nav .header .li a {
     font-size: 1.1rem;
     font-weight: 300;
     line-height: 30px;
+    word-break: normal;
 }
 
 /* END APRESENTATION-VIEW */
@@ -344,6 +345,9 @@ nav .header .li a {
             &:hover {
                 color: #da6060;
             }
+            &::selection {
+                color: #da6060;
+            }
         }
 
         & ion-icon {
@@ -352,6 +356,9 @@ nav .header .li a {
         }
 
         &:hover {
+            color: var(--color-principal);
+        }
+        &::selection {
             color: var(--color-principal);
         }
     }
