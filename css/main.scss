@@ -345,7 +345,7 @@ nav .header .li a {
             &:hover {
                 color: #da6060;
             }
-            &::selection {
+            &:focus {
                 color: #da6060;
             }
         }
@@ -358,7 +358,7 @@ nav .header .li a {
         &:hover {
             color: var(--color-principal);
         }
-        &::selection {
+        &:focus {
             color: var(--color-principal);
         }
     }
