@@ -224,7 +224,8 @@ nav .header .li a {
 .infos-align p {
   font-size: 1.1rem;
   font-weight: 300;
-  line-height: 30px; }
+  line-height: 30px;
+  word-break: normal; }
 
 /* END APRESENTATION-VIEW */
 /* PROJECT-VIEW */
@@ -267,10 +268,18 @@ nav .header .li a {
     transition: 0.4s; }
     #project-view .align-center span .infos-align p a.null:hover {
       color: #da6060; }
+    #project-view .align-center span .infos-align p a.null::selection {
+      color: #da6060; }
+    #project-view .align-center span .infos-align p a.null:focus {
+      color: #da6060; }
     #project-view .align-center span .infos-align p a ion-icon {
       font-size: 1.4rem;
       margin-left: 10px; }
     #project-view .align-center span .infos-align p a:hover {
+      color: var(--color-principal); }
+    #project-view .align-center span .infos-align p a::selection {
+      color: var(--color-principal); }
+    #project-view .align-center span .infos-align p a:focus {
       color: var(--color-principal); }
 
 /* END PROJECT-VIEW */
@@ -342,6 +351,18 @@ nav .header .li a {
   color: #fff; }
 
 /* END FOOTER */
+@media (max-width: 460px) {
+  #contact-view .org-align .align-center p {
+    font-size: 0.9rem; } }
+
+@media (max-width: 380px) {
+  #contact-view .org-align .align-center p {
+    font-size: 0.8rem; } }
+
+@media (max-width: 340px) {
+  #contact-view .org-align .align-center p i {
+    font-size: 0.8rem; } }
+
 @media (max-width: 990px) {
   .bolas > div {
     width: 20px;
@@ -388,4 +409,8 @@ nav .header .li a {
       row-gap: 20px; }
       #project-view .org-align .align-center span div {
         width: 100%; }
-  /* END PROJECT-VIEW*/ }
+  /* END PROJECT-VIEW*/
+  /* CONTACT-VIEW */
+  #contact-view .org-align .align-center p i {
+    margin: 20px 5px 20px 0px; }
+  /* END CONTACT-VIEW */ }
